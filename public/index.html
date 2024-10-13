@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de sockets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.js"></script>
+</head>
+<body>
+    <div id="panel-bienvenida">
+        <h2>Bienvenido a mi WhatsApp</h2>
+        
+        <!-- Formulario de registro -->
+        <h3>Registrarse</h3>
+        <input type="text" id="persona" placeholder="Nombre de usuario">
+        <input type="password" id="contraseña" placeholder="Contraseña">
+        <button id="registrar">Registrarse</button>
+
+        <!-- Formulario de inicio de sesión -->
+        <h3>Iniciar sesión</h3>
+        <input type="text" id="nombreInicio" placeholder="Nombre de usuario">
+        <input type="password" id="contraseñaInicio" placeholder="Contraseña">
+        <button id="iniciarSesion">Iniciar sesión</button>
+    </div>
+
+    <div id="app-chat" style="display:none;">
+        <h4 class="nube box">Chat en vivo</h4>
+        <div id="ventana-mensajes">
+            <div id="output"> </div>
+            <div id="escribiendo-mensaje"> </div>
+        </div>
+        <input type="text" id="usuario"><br>
+        <input type="text" id="mensaje">
+        <button id="enviar">Enviar</button>
+    </div> 
+    <script src="/chat.js"></script>
+</body>
+</html>

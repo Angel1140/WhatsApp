@@ -1,0 +1,184 @@
+/* Aplica un color de fondo a toda la página */
+body {
+    background-color: #64f07b; /* Cambia este código de color según tu preferencia */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 20px 30px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #16a05b; /* Gradiente de color */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Sombra suave */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Letras en mayúsculas */
+}
+
+h3 {
+    font-size: 30px;
+    color: #000000;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    letter-spacing: 1px;
+    text-transform: capitalize; /* Primera letra de cada palabra en mayúscula */
+}
+
+h4 {
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    letter-spacing: 1px;
+    text-transform: capitalize; /* Primera letra de cada palabra en mayúscula */
+}
+
+#panel-bienvenida{
+    padding: 20% 20%;
+}
+
+#usuario{
+    color: #00a508;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #ddd;
+}
+
+#persona{
+    border: 1px solid #ddd;
+}
+
+#app-chat {
+    display: none;
+    max-width: 900px; /* Aumenta el tamaño del chat */
+    height: 600px; /* Altura para simular una ventana de chat */
+    margin: 30px auto;
+    border: 1px solid #64f07b; /* Color similar al borde de WhatsApp */
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1); /* Sombra más prominente */
+    border-radius: 8px; /* Bordes más redondeados, típico en WhatsApp */
+    background-color: #c5c5c5; /* Color de fondo similar al de la app de WhatsApp */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+#ventana-mensajes {
+    height: 400px; /* Aumenta la altura para que se vea más como WhatsApp */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    background: #c5c5c5; /* Fondo similar al de la ventana de mensajes de WhatsApp */
+    border: none; /* Quita el borde */
+    padding: 15px; /* Espacio interno */
+    border-radius: 10px 10px 0 0; /* Bordes superiores redondeados */
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra interna para darle profundidad */
+}
+
+#output p {
+    padding: 14px 10px; /* Espacio interno dentro del cuadro del mensaje */
+    margin: 20px 0; /* Espacio en blanco entre los mensajes */
+    border: 1px solid #d1d1d1; /* Borde para los cuadros de los mensajes */
+    border-radius: 8px; /* Bordes redondeados para una apariencia amigable */
+    background-color: #6aff6a; /* Fondo para los mensajes con texto */
+    color: #3a3a3a; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+#output p:empty {
+    margin: 20px 0; /* Mantiene el espacio en blanco entre mensajes */
+    padding: 0; /* Sin espacio interno para los mensajes vacíos */
+    border: none; /* Sin borde para los mensajes vacíos */
+    background-color: transparent; /* Fondo transparente para los vacíos */
+    box-shadow: none; /* Sin sombra para mensajes vacíos */
+}
+
+/* Cuando usuario esta escribiendo mensaje */
+#escribiendo-mensaje p{
+    color: #000000;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+/* Nombre de usuario */
+#output strong{
+    color: #006905;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+input:focus {outline:0;}
+
+button {
+    background: #23d641; /* Cambiado a un color naranja brillante */
+    color: #000000;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-color: #13a500; /* Cambiado a un tono más oscuro del naranja */
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+button:hover {
+    background: #009107; /* Efecto hover más oscuro para el botón */
+    transform: scale(1.05); /* Pequeño aumento al pasar el ratón */
+}
+
+.nube {
+    background-color: #006310; /* Color de fondo azul (el color de la burbuja del mensaje) */
+    border-radius: 5px; /* Bordes redondeados para que parezca una burbuja */
+    box-shadow: 0 0 6px #B2B2B2; /* Sombra difusa para darle profundidad a la burbuja */
+    display: inline-block; /* Hace que la burbuja se ajuste al tamaño del contenido */
+    padding: 10px 18px; /* Espacio interno dentro de la burbuja */
+    position: relative; /* Permite posicionar elementos hijos en relación a esta burbuja */
+    vertical-align: top; /* Alinea la burbuja verticalmente hacia la parte superior en relación a otros elementos */
+    color: #ffffff; /* Color del texto dentro de la burbuja (blanco) */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; /* Tipografía del texto en la burbuja */
+}
+
+.nube::before {
+    background-color: #006310; /* Color del triángulo (igual que el de la burbuja) */
+    content: "\00a0"; /* Espacio en blanco como contenido del pseudo-elemento */
+    display: block; /* Lo hace un elemento de bloque, ocupando todo el ancho disponible */
+    height: 16px; /* Altura del triángulo */
+    position: absolute; /* Posiciona el triángulo de manera absoluta dentro de la burbuja */
+    top: 11px; /* Coloca el triángulo 11px desde la parte superior del contenedor padre */
+    transform: rotate(29deg) skew(-35deg); /* Rota y deforma el triángulo para darle forma de punta */
+    width: 20px; /* Anchura del triángulo */
+}
+
+.box {
+    float: right; /* Hace que la burbuja flote hacia la derecha */
+    margin: 5px 45px 5px 20px; /* Margen alrededor de la burbuja: 
+                                    - 5px arriba y abajo
+                                    - 45px a la derecha (separación del borde derecho)
+                                    - 20px a la izquierda */
+}
+
+.box::before {
+    box-shadow: -2px 2px 2px 0 rgba(178, 178, 178, .4); /* Sombra en el lado izquierdo inferior de la burbuja */
+    left: -9px; /* Desplaza la sombra hacia la izquierda */
+}
