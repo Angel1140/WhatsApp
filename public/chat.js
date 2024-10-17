@@ -1,5 +1,5 @@
 // var socket = io.connect('http://localhost:5000');
-var socket = io.connect('http://3.145.160.209:3000');
+var socket = io.connect('http://18.191.242.247:3000');
 
 var persona = document.getElementById('persona'),
     appChat = document.getElementById('app-chat'),
